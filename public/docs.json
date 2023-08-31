@@ -1,0 +1,50 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Coolr API",
+      "version": "0.1.0",
+      "description": "A RESTful API to provide reporting",
+      "license": {
+        "name": "Copyright (c) Coolr Group Inc.",
+        "url": "https//www.coolrgroup.com"
+      },
+      "contact": {
+        "name": "Coolr Group Inc.",
+        "url": "https://www.coolrgroup.com"
+      }
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3000"
+      },
+      {
+        "url": "https://dev.coolrgroup.com/internal-reporting"
+      },
+      {
+        "url": "https://portal.coolrgroup.com/internal-reporting"
+      }
+    ],
+    "scheme": [
+      "http",
+      "https"
+    ],
+    "paths": {
+      "/": {
+        "get": {
+          "tags": [
+            "Download xlsx"
+          ],
+          "summary": "Downaload",
+          "responses": {
+            "200": {
+              "description": "Report in excel"
+            }
+          }
+        }
+      }
+    },
+    "definitions": {},
+    "responses": {},
+    "parameters": {},
+    "tags": []
+  }
